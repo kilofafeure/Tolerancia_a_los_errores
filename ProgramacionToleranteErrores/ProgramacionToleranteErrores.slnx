@@ -5,4 +5,10 @@
     <Project Path="ExceptionPerformance/ExceptionPerformance.csproj" />
     <Project Path="ProductRepository_Exception/ProductRepository_Exception.csproj" />
   </Folder>
+  <Folder Name="/Validations/">
+    <Project Path="DataAnnotationsAPI/DataAnnotationsAPI.csproj" />
+    <Project Path="ManualValidations/ManualValidations.csproj" />
+    <Project Path="NullReference/NullReference.csproj" />
+    <Project Path="RegexValidation/RegexValidation.csproj" />
+  </Folder>
 </Solution>
