@@ -1,6 +1,8 @@
 <Solution>
   <Folder Name="/Exceptions/">
     <Project Path="Exception/Exception.csproj" />
+    <Project Path="ExceptionAPI/ExceptionAPI.csproj" />
     <Project Path="ExceptionPerformance/ExceptionPerformance.csproj" />
+    <Project Path="ProductRepository_Exception/ProductRepository_Exception.csproj" />
   </Folder>
 </Solution>
