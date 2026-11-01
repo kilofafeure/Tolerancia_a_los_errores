@@ -1,4 +1,5 @@
-﻿
+﻿using ExceptionClasses;
+
 ////// dobles no produce error en división por cero, pero enteros sí produce error en división por cero.
 
 try
@@ -69,9 +70,9 @@ do
         Console.WriteLine("Escribe otro número: ");
         int f = Convert.ToInt32(Console.ReadLine());
 
-        int result2 = e / f;
+        int result3 = e / f;
 
-        Console.WriteLine($"El resultado de la división es: {result2}");
+        Console.WriteLine($"El resultado de la división es: {result3}");
 
         isOver = true;
     }
@@ -116,13 +117,13 @@ do
         int h = Convert.ToInt32(Console.ReadLine());
 
         if (h < 0)
-        { 
+        {
             throw new Exception("El número no puede ser negativo");
         }
 
-        int result2 = g / h;
+        int result4 = g / h;
 
-        Console.WriteLine($"El resultado de la división es: {result2}");
+        Console.WriteLine($"El resultado de la división es: {result4}");
 
         isOver = true;
     }
@@ -150,3 +151,35 @@ do
 while (!isOver2);
 
 Console.WriteLine("Programa finalizado.");
+
+////// custom exception class
+
+try
+{
+    Console.WriteLine("Escribe un número: ");
+    int i = Convert.ToInt32(Console.ReadLine());
+
+    Console.WriteLine("Escribe otro número: ");
+    int j = Convert.ToInt32(Console.ReadLine());
+
+    if (j < 0)
+    {
+        throw new NegativeException("El número no puede ser negativo");
+    }
+
+    double result5 = i / j;
+
+    Console.WriteLine($"El resultado de la división es: {result5}");
+}
+catch (NegativeException ex)
+{
+    Console.WriteLine(ex.Message);
+}
+catch (Exception ex)
+{
+    Console.WriteLine($"Se produjo un error: {ex.Message}");
+}
+finally
+{
+    Console.WriteLine("Ejecución completada.");
+}
