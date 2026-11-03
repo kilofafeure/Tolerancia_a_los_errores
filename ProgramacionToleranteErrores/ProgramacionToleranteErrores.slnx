@@ -16,6 +16,9 @@
     <Project Path="ResultPatternCollection/ResultPatternCollection.csproj" Id="e8922477-2fcc-4ed6-894a-5892e6d617e1" />
     <Project Path="ResultPatternCombine/ResultPatternCombine.csproj" Id="d20bad16-478b-43ac-921c-69673c823846" />
   </Folder>
+  <Folder Name="/Sanitization/">
+    <Project Path="SanitizationWebAPI/SanitizationWebAPI.csproj" Id="4d0503e5-c542-4198-be0a-eed17e72e333" />
+  </Folder>
   <Folder Name="/Validations/">
     <Project Path="DataAnnotationsAPI/DataAnnotationsAPI.csproj" />
     <Project Path="FluentValidationAPI/FluentValidationAPI.csproj" Id="a98dbca1-9895-42bb-93f9-617626aaba4e" />

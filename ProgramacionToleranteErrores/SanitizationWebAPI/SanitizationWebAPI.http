@@ -1,0 +1,15 @@
+@SanitizationWebAPI_HostAddress = http://localhost:5145
+
+POST {{SanitizationWebAPI_HostAddress}}/people/
+Content-Type: application/json
+
+{
+  "name": "  Miguel    González     Bitrián   ",
+  "age": 47,
+  "email": "miGUel.gonzALEZ@example.com   ",
+  "phone": "  (33) 123-4567   ",
+  "description": "  This is a sample description  || 1212 1  12   with extra spaces.   ",
+  "content": "<div>This is a sample content.</div><h1>Sample Heading</h1><script>alert('XSS attack!');</script><p>This is a sample paragraph.</p><script>console.log('Hello, World!')</script></div>"
+} 
+
+###
