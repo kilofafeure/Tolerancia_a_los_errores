@@ -5,6 +5,11 @@
     <Project Path="ExceptionPerformance/ExceptionPerformance.csproj" />
     <Project Path="ProductRepository_Exception/ProductRepository_Exception.csproj" />
   </Folder>
+  <Folder Name="/NotificationPattern/">
+    <Project Path="NotificationPattern/NotificationPattern.csproj" Id="7403e3e7-a735-492f-917e-df1b34b5ae59" />
+    <Project Path="NotificationPatternFile/NotificationPatternFile.csproj" Id="cf37f12e-ad3b-42bd-a644-315a3cae8e84" />
+    <Project Path="NotificationPatternWithExceptions/NotificationPatternWithExceptions.csproj" Id="f0b54bda-8d7d-4fec-9221-bf8836f90a2f" />
+  </Folder>
   <Folder Name="/ResultPattern/">
     <Project Path="RegisterResultPattern/RegisterResultPattern.csproj" Id="3e211806-ebb6-4097-9e73-70ff3a06c1b0" />
     <Project Path="ResultPattern/ResultPattern.csproj" Id="da24b2fd-e7a1-4775-9186-d1a77c2ae367" />
