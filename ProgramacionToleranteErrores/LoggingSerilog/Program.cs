@@ -4,11 +4,11 @@ var logDirectory = Path.Combine(AppContext.BaseDirectory, "logs");
 try
 {
     Directory.CreateDirectory(logDirectory);
-    Console.WriteLine($"Carpeta creada: {logDirectory}");
+    Console.WriteLine($"Created folder: {logDirectory}");
 }
 catch (Exception ex)
 {
-    Console.WriteLine($"Error creando carpeta: {ex.Message}");
+    Console.WriteLine($"Error creating folder: {ex.Message}");
     throw;
 }
 
