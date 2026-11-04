@@ -12,6 +12,8 @@
     <Project Path="LoggingSerilog/LoggingSerilog.csproj" Id="cee1c919-0e86-41ef-af5c-abcf5ebf79d8" />
   </Folder>
   <Folder Name="/ResilientPatterns/" />
+  <Folder Name="/ResilientPatterns/CircuitBrakerPattern/" />
+  <Folder Name="/ResilientPatterns/FallbackPattern/" />
   <Folder Name="/ResilientPatterns/RetryPattern/">
     <Project Path="AsyncRetry/AsyncRetry.csproj" Id="397d7d1b-0f76-4fa4-a1e5-4058159ae160" />
     <Project Path="BasicRetry/BasicRetry.csproj" Id="cce0d733-c4a6-4194-b736-686ebc96e807" />
@@ -19,6 +21,7 @@
     <Project Path="PollyInfiniteRetry/PollyInfiniteRetry.csproj" Id="7244cf52-1113-4100-a2ae-bdc3d4227a93" />
     <Project Path="PollyRetry/PollyRetry.csproj" Id="80743961-6fbd-4314-a920-10d62ad38752" />
   </Folder>
+  <Folder Name="/ResilientPatterns/TimeoutPattern/" />
   <Folder Name="/ReturnPatterns/" />
   <Folder Name="/ReturnPatterns/NotificationPattern/">
     <Project Path="NotificationPattern/NotificationPattern.csproj" Id="7403e3e7-a735-492f-917e-df1b34b5ae59" />
