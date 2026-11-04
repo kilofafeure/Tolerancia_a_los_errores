@@ -1,8 +1,11 @@
 ﻿var retryOperation = new Retry<string>(async () =>
 {
     var http = new HttpClient();
+    // Failling example
     var response = await http.GetAsync("https://somesite.io");
-    
+    // Working example
+    //var response = await http.GetAsync("https://google.com");
+
     if (!response.IsSuccessStatusCode) {
         throw new Exception($"Operation failled with statusCode: {response.StatusCode}");
     }
@@ -14,9 +17,10 @@
 try
 {
     string result = await retryOperation.Execute();
+    Console.WriteLine($"Success operation with result: {result[..50]}");
 }
 catch (Exception ex) {
-    Console.WriteLine($"Failed opertaion after some attempts: {ex.Message}");
+    Console.WriteLine($"Failed operation after some attempts: {ex.Message}");
 }
 
 
