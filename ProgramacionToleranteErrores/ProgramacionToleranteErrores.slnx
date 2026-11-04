@@ -8,6 +8,7 @@
   <Folder Name="/Logging/">
     <Project Path="LoggingAPI/LoggingAPI.csproj" Id="a52c85a8-915c-42d7-b94d-396571de3f7d" />
     <Project Path="LoggingIntro/LoggingIntro.csproj" Id="d6e12cdc-1f87-4fc9-aac6-5f77f5d3c0be" />
+    <Project Path="LoggingSerilog/LoggingSerilog.csproj" Id="cee1c919-0e86-41ef-af5c-abcf5ebf79d8" />
   </Folder>
   <Folder Name="/NotificationPattern/">
     <Project Path="NotificationPattern/NotificationPattern.csproj" Id="7403e3e7-a735-492f-917e-df1b34b5ae59" />
