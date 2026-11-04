@@ -15,6 +15,7 @@
   <Folder Name="/ResilientPatterns/RetryPattern/">
     <Project Path="AsyncRetry/AsyncRetry.csproj" Id="397d7d1b-0f76-4fa4-a1e5-4058159ae160" />
     <Project Path="BasicRetry/BasicRetry.csproj" Id="cce0d733-c4a6-4194-b736-686ebc96e807" />
+    <Project Path="PollyRetry/PollyRetry.csproj" Id="80743961-6fbd-4314-a920-10d62ad38752" />
   </Folder>
   <Folder Name="/ReturnPatterns/" />
   <Folder Name="/ReturnPatterns/NotificationPattern/">
