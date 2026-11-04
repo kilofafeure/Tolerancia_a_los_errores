@@ -25,7 +25,10 @@
     <Project Path="PollyInfiniteRetry/PollyInfiniteRetry.csproj" Id="7244cf52-1113-4100-a2ae-bdc3d4227a93" />
     <Project Path="PollyRetry/PollyRetry.csproj" Id="80743961-6fbd-4314-a920-10d62ad38752" />
   </Folder>
-  <Folder Name="/ResilientPatterns/TimeoutPattern/" />
+  <Folder Name="/ResilientPatterns/TimeoutPattern/">
+    <Project Path="TimeoutOptimistic/TimeoutOptimistic.csproj" Id="c63e0fb6-a6df-486e-a4cc-9e3d243e06e6" />
+    <Project Path="TimeoutPessimistic/TimeoutPessimistic.csproj" Id="7f0f3789-d25f-458d-b70a-62e3228ecc94" />
+  </Folder>
   <Folder Name="/ReturnPatterns/" />
   <Folder Name="/ReturnPatterns/NotificationPattern/">
     <Project Path="NotificationPattern/NotificationPattern.csproj" Id="7403e3e7-a735-492f-917e-df1b34b5ae59" />
