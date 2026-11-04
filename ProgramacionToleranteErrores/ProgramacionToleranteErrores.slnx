@@ -12,7 +12,11 @@
     <Project Path="LoggingSerilog/LoggingSerilog.csproj" Id="cee1c919-0e86-41ef-af5c-abcf5ebf79d8" />
   </Folder>
   <Folder Name="/ResilientPatterns/" />
-  <Folder Name="/ResilientPatterns/CircuitBrakerPattern/" />
+  <Folder Name="/ResilientPatterns/CircuitBreakerPattern/">
+    <Project Path="CircuitBreakerAPI/CircuitBreakerAPI.csproj" Id="6b57e874-9154-4dcf-975e-914f561073e4" />
+    <Project Path="CircuitBreakerIntro/CircuitBreakerIntro.csproj" Id="64e8900a-0990-4875-b88f-2aec0f2f3b20" />
+    <Project Path="CircuitBreakerReset/CircuitBreakerReset.csproj" Id="ba268ba7-d694-4a63-a0fd-cd6657f3eb5b" />
+  </Folder>
   <Folder Name="/ResilientPatterns/FallbackPattern/" />
   <Folder Name="/ResilientPatterns/RetryPattern/">
     <Project Path="AsyncRetry/AsyncRetry.csproj" Id="397d7d1b-0f76-4fa4-a1e5-4058159ae160" />
