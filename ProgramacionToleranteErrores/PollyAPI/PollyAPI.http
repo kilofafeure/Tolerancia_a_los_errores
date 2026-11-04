@@ -1,0 +1,9 @@
+@PollyAPI_HostAddress = http://localhost:5079
+
+GET {{PollyAPI_HostAddress}}/checkstatus/
+Accept: application/json
+
+###
+
+GET {{PollyAPI_HostAddress}}/checkstatussimplemode/
+Accept: application/json
