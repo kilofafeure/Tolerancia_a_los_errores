@@ -26,6 +26,7 @@
     <Project Path="PollyRetry/PollyRetry.csproj" Id="80743961-6fbd-4314-a920-10d62ad38752" />
   </Folder>
   <Folder Name="/ResilientPatterns/TimeoutPattern/">
+    <Project Path="TimeoutAPI/TimeoutAPI.csproj" Id="1a5e5f55-7cf1-496e-ae75-75e930613c72" />
     <Project Path="TimeoutManual/TimeoutManual.csproj" Id="f79c431d-d6bc-4e46-8e0a-c99659238274" />
     <Project Path="TimeoutOptimistic/TimeoutOptimistic.csproj" Id="c63e0fb6-a6df-486e-a4cc-9e3d243e06e6" />
     <Project Path="TimeoutPessimistic/TimeoutPessimistic.csproj" Id="7f0f3789-d25f-458d-b70a-62e3228ecc94" />
