@@ -11,13 +11,18 @@
     <Project Path="LoggingIntro/LoggingIntro.csproj" Id="d6e12cdc-1f87-4fc9-aac6-5f77f5d3c0be" />
     <Project Path="LoggingSerilog/LoggingSerilog.csproj" Id="cee1c919-0e86-41ef-af5c-abcf5ebf79d8" />
   </Folder>
-  <Folder Name="/ResilientPatterns/" />
+  <Folder Name="/ResilientPatterns/">
+    <Project Path="ReslientPatternsTogether/ReslientPatternsTogether.csproj" Id="ba194d10-0e6a-4ab8-8f99-1438170f26da" />
+  </Folder>
   <Folder Name="/ResilientPatterns/CircuitBreakerPattern/">
     <Project Path="CircuitBreakerAPI/CircuitBreakerAPI.csproj" Id="6b57e874-9154-4dcf-975e-914f561073e4" />
     <Project Path="CircuitBreakerIntro/CircuitBreakerIntro.csproj" Id="64e8900a-0990-4875-b88f-2aec0f2f3b20" />
     <Project Path="CircuitBreakerReset/CircuitBreakerReset.csproj" Id="ba268ba7-d694-4a63-a0fd-cd6657f3eb5b" />
   </Folder>
-  <Folder Name="/ResilientPatterns/FallbackPattern/" />
+  <Folder Name="/ResilientPatterns/FallbackPattern/">
+    <Project Path="FallbackData/FallbackData.csproj" Id="e577eea6-6c4f-43b7-8e6e-7422e68f24e3" />
+    <Project Path="FallbackIntro/FallbackIntro.csproj" Id="05034859-5d14-408f-8cc7-70bd47f748bb" />
+  </Folder>
   <Folder Name="/ResilientPatterns/RetryPattern/">
     <Project Path="AsyncRetry/AsyncRetry.csproj" Id="397d7d1b-0f76-4fa4-a1e5-4058159ae160" />
     <Project Path="BasicRetry/BasicRetry.csproj" Id="cce0d733-c4a6-4194-b736-686ebc96e807" />
@@ -53,4 +58,5 @@
     <Project Path="NullReference/NullReference.csproj" />
     <Project Path="RegexValidation/RegexValidation.csproj" />
   </Folder>
+  <Project Path="ModeloN-grama/ModeloN-grama.csproj" Id="aaadfc81-5e0d-469d-8e0f-fa56ed44b05b" />
 </Solution>
