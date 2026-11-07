@@ -28,13 +28,13 @@ app.UseExceptionHandler(error => {
         var (status, title) = ex switch
         {
             ValidationException or ArgumentException or BadHttpRequestException 
-                => (StatusCodes.Status400BadRequest, "Error de validación"),
+                => (StatusCodes.Status400BadRequest, "Error validation"),
             KeyNotFoundException
-                => (StatusCodes.Status400BadRequest, "Recurso no encontrado"),
+                => (StatusCodes.Status400BadRequest, "Resource not found"),
             TimeoutException
-                => (StatusCodes.Status504GatewayTimeout, "Tiempo de espera agotado"),
+                => (StatusCodes.Status504GatewayTimeout, "Request timeout"),
             _
-                => (StatusCodes.Status500InternalServerError, "Error interno del servidor")
+                => (StatusCodes.Status500InternalServerError, "Internal server error")
         };
 
         var problem = new ProblemDetails

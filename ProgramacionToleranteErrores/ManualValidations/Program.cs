@@ -1,24 +1,24 @@
 ﻿
-Console.WriteLine("Escribe tu edad: ");
+Console.WriteLine("Write your age: ");
 string? sAge = Console.ReadLine();
 
 // Validación sintáctica
 if (!int.TryParse(sAge, out int age))
 {
-    Console.WriteLine($"Entrada inválida: {sAge}. Por favor, ingresa un número.");
+    Console.WriteLine($"Invalid input: {sAge}. Please enter a valid number.");
     return;
 }
 
 // Validación semántica
 if (age < 0)
 {
-    Console.WriteLine("La edad no puede ser negativa.");
+    Console.WriteLine("Age cannot be negative.");
     return;
 }
 else if (age > 120)
 {
-    Console.WriteLine("La edad ingresada es poco realista.");
+    Console.WriteLine("Age is not realistic.");
     return;
 }
 
-Console.WriteLine("La edad es correcta.");
+Console.WriteLine("Incorrect age.");

@@ -4,56 +4,56 @@
 
 try
 {
-    Console.WriteLine("Escribe un número: ");
+    Console.WriteLine("Write a number: ");
     double a = Convert.ToDouble(Console.ReadLine());
 
-    Console.WriteLine("Escribe otro número: ");
+    Console.WriteLine("Write another number: ");
     double b = Convert.ToDouble(Console.ReadLine());
 
     double result = a / b;
 
-    Console.WriteLine($"El resultado de la división es: {result}");
+    Console.WriteLine($"The result of the division is: {result}");
 }
 catch (Exception ex)
 {
-    Console.WriteLine($"Se produjo un error: {ex.Message}");
+    Console.WriteLine($"An error occurred: {ex.Message}");
 }
 finally
 {
-    Console.WriteLine("Ejecución completada.");
+    Console.WriteLine("Execution completed.");
 }
 
 try
 {
-    Console.WriteLine("Escribe un número: ");
+    Console.WriteLine("Write a number: ");
     int c = Convert.ToInt32(Console.ReadLine());
 
-    Console.WriteLine("Escribe otro número: ");
+    Console.WriteLine("Write another number: ");
     int d = Convert.ToInt32(Console.ReadLine());
 
     int result2 = c / d;
 
-    Console.WriteLine($"El resultado de la división es: {result2}");
+    Console.WriteLine($"The result of the division is: {result2}");
 }
 catch (FormatException)
 {
-    Console.WriteLine($"Debes escribir números");
+    Console.WriteLine($"You must enter numbers");
 }
 catch (DivideByZeroException)
 {
-    Console.WriteLine($"No se puede dividir por cero");
+    Console.WriteLine($"Cannot divide by zero");
 }
 catch (OverflowException)
 {
-    Console.WriteLine($"El número es demasiado grande para ser representado");
+    Console.WriteLine($"The number is too large to be represented");
 }
 catch (Exception ex)
 {
-    Console.WriteLine($"Se produjo un error: {ex.GetType()} - {ex.Message}");
+    Console.WriteLine($"An error occurred: {ex.GetType()} - {ex.Message}");
 }
 finally
 {
-    Console.WriteLine("Ejecución completada.");
+    Console.WriteLine("Execution completed.");
 }
 
 ////// control finalización del programa con un bucle do while y una variable booleana para controlar la finalización del programa.
@@ -64,33 +64,33 @@ do
 {
     try
     {
-        Console.WriteLine("Escribe un número: ");
+        Console.WriteLine("Write a number: ");
         int e = Convert.ToInt32(Console.ReadLine());
 
-        Console.WriteLine("Escribe otro número: ");
+        Console.WriteLine("Write another number: ");
         int f = Convert.ToInt32(Console.ReadLine());
 
         int result3 = e / f;
 
-        Console.WriteLine($"El resultado de la división es: {result3}");
+        Console.WriteLine($"The result of the division is: {result3}");
 
         isOver = true;
     }
     catch (FormatException)
     {
-        Console.WriteLine($"Debes escribir números");
+        Console.WriteLine($"You must enter numbers");
     }
     catch (DivideByZeroException)
     {
-        Console.WriteLine($"No se puede dividir por cero");
+        Console.WriteLine($"Cannot divide by zero");
     }
     catch (OverflowException)
     {
-        Console.WriteLine($"El número es demasiado grande para ser representado");
+        Console.WriteLine($"The number is too large to be represented");
     }
     catch (Exception ex)
     {
-        Console.WriteLine($"Se produjo un error: {ex.GetType()} - {ex.Message}");
+        Console.WriteLine($"An error occurred: {ex.GetType()} - {ex.Message}");
     }
     finally
     {
@@ -99,7 +99,7 @@ do
 }
 while (!isOver);
 
-Console.WriteLine("Programa finalizado.");
+Console.WriteLine("Program finished.");
 
 ////// control finalización del programa con un bucle do while y una variable booleana para controlar la finalización del programa,
 ////// pero con una excepción personalizada.
@@ -110,38 +110,38 @@ do
 {
     try
     {
-        Console.WriteLine("Escribe un número: ");
+        Console.WriteLine("Write a number: ");
         int g = Convert.ToInt32(Console.ReadLine());
 
-        Console.WriteLine("Escribe otro número: ");
+        Console.WriteLine("Write another number: ");
         int h = Convert.ToInt32(Console.ReadLine());
 
         if (h < 0)
         {
-            throw new Exception("El número no puede ser negativo");
+            throw new Exception("The number cannot be negative");
         }
 
         int result4 = g / h;
 
-        Console.WriteLine($"El resultado de la división es: {result4}");
+        Console.WriteLine($"The result of the division is: {result4}");
 
         isOver = true;
     }
     catch (FormatException)
     {
-        Console.WriteLine($"Debes escribir números");
+        Console.WriteLine($"You must enter numbers");
     }
     catch (DivideByZeroException)
     {
-        Console.WriteLine($"No se puede dividir por cero");
+        Console.WriteLine($"Cannot divide by zero");
     }
     catch (OverflowException)
     {
-        Console.WriteLine($"El número es demasiado grande para ser representado");
+        Console.WriteLine($"The number is too large to be represented");
     }
     catch (Exception ex)
     {
-        Console.WriteLine($"Se produjo un error: {ex.GetType()} - {ex.Message}");
+        Console.WriteLine($"An error occurred: {ex.GetType()} - {ex.Message}");
     }
     finally
     {
@@ -150,26 +150,26 @@ do
 }
 while (!isOver2);
 
-Console.WriteLine("Programa finalizado.");
+Console.WriteLine("Program finished.");
 
 ////// custom exception class
 
 try
 {
-    Console.WriteLine("Escribe un número: ");
+    Console.WriteLine("Write a number: ");
     int i = Convert.ToInt32(Console.ReadLine());
 
-    Console.WriteLine("Escribe otro número: ");
+    Console.WriteLine("Write another number: ");
     int j = Convert.ToInt32(Console.ReadLine());
 
     if (j < 0)
     {
-        throw new NegativeException("El número no puede ser negativo");
+        throw new NegativeException("The number cannot be negative");
     }
 
     double result5 = i / j;
 
-    Console.WriteLine($"El resultado de la división es: {result5}");
+    Console.WriteLine($"The result of the division is: {result5}");
 }
 catch (NegativeException ex)
 {
@@ -177,9 +177,9 @@ catch (NegativeException ex)
 }
 catch (Exception ex)
 {
-    Console.WriteLine($"Se produjo un error: {ex.Message}");
+    Console.WriteLine($"An error occurred: {ex.Message}");
 }
 finally
 {
-    Console.WriteLine("Ejecución completada.");
+    Console.WriteLine("Execution completed.");
 }

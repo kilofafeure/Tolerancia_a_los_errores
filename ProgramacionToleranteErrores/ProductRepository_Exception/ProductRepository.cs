@@ -12,12 +12,12 @@
         {
             if (id <= 0)
             {
-                throw new KeyNotFoundException("El ID del producto debe ser un entero positivo.");
+                throw new KeyNotFoundException("The product ID must be a positive integer.");
             }
 
             var product = _products.FirstOrDefault(p => p.Id == id);
 
-            return product ?? throw new KeyNotFoundException($"Producto con ID {id} no encontrado.");
+            return product ?? throw new KeyNotFoundException($"Product with ID {id} not found.");
         }
     }
 

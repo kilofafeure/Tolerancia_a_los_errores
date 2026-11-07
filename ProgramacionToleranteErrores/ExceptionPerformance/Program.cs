@@ -27,4 +27,4 @@ for (int i = 0; i < n; i++)
 }
 
 sw.Stop();
-Console.WriteLine($"Tiempo: {sw.ElapsedMilliseconds} ms, éxitos: {successNumbers}");
+Console.WriteLine($"Time: {sw.ElapsedMilliseconds} ms, Successes: {successNumbers}");
